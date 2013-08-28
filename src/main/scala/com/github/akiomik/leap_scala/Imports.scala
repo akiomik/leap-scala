@@ -6,19 +6,15 @@ trait Imports extends BaseImports with TypeImports
 
 trait BaseImports {
   val CircleGesture    = StaticCircleGesture
-  val ValueType        = StaticValueType
   val Device           = StaticDevice
   val Finger           = StaticFinger
   val Frame            = StaticFrame
   val Gesture          = StaticGesture
-  val State            = StaticState
-  val Type             = StaticType
   val Hand             = StaticHand
   val InteractionBox   = StaticInteractionBox
   val KeyTapGesture    = StaticKeyTapGesture
   val Matrix           = StaticMatrix
   val Pointable        = StaticPointable
-  val Zone             = StaticZone
   val ScreenTapGesture = StaticScreenTapGesture
   val SwipeGesture     = StaticSwipeGesture
   val Tool             = StaticTool
@@ -28,17 +24,13 @@ trait BaseImports {
 trait TypeImports {
   type CircleGesture    = com.leapmotion.leap.CircleGesture
   type Config           = com.leapmotion.leap.Config
-  type ValueType        = com.leapmotion.leap.Config.ValueType
   type Controller       = com.leapmotion.leap.Controller
-  type PolicyFlag       = com.leapmotion.leap.Controller.PolicyFlag
   type Device           = com.leapmotion.leap.Device
   type DeviceList       = com.leapmotion.leap.DeviceList
   type Finger           = com.leapmotion.leap.Finger
   type FingerList       = com.leapmotion.leap.FingerList
   type Frame            = com.leapmotion.leap.Frame
   type Gesture          = com.leapmotion.leap.Gesture
-  type State            = com.leapmotion.leap.Gesture.State
-  type Type             = com.leapmotion.leap.Gesture.Type
   type GestureList      = com.leapmotion.leap.GestureList
   type Hand             = com.leapmotion.leap.Hand
   type HandList         = com.leapmotion.leap.HandList
@@ -47,7 +39,6 @@ trait TypeImports {
   type Listener         = com.leapmotion.leap.Listener
   type Matrix           = com.leapmotion.leap.Matrix
   type Pointable        = com.leapmotion.leap.Pointable
-  type Zone             = com.leapmotion.leap.Pointable.Zone
   type PointableList    = com.leapmotion.leap.PointableList
   type ScreenTapGesture = com.leapmotion.leap.ScreenTapGesture
   type SwipeGesture     = com.leapmotion.leap.SwipeGesture
