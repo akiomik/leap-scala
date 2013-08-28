@@ -27,5 +27,25 @@ libraryDependencies ++= Seq(
 import com.github.akiomik.leap_scala.Imports._
   ```
   
+## Sample
+```scala
+import com.github.akiomik.leap_scala.Imports._
+
+object SampleApp {
+  def main(args: Array[String]) {
+    val controller = new Controller()
+    val listener = new SampleListener()
+
+    controller.addListener(listener)
+    readLine("Press Enter to quit...\n")
+    controller.removeListener(listener)
+  }
+}
+
+class SampleListener extends Listener {
+  // do something ...
+}
+```
+  
 ## Licence
 The MIT License. See `LICENSE` file.
